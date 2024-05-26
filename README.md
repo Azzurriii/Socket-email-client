@@ -1,6 +1,6 @@
 # Email Client using SMTP and POP3
-
 This project is a simple and lightweight email client that uses the SMTP and POP3 protocols to send and receive emails. It has a console-based interface that allows you to compose, view, and delete emails.
+The project doesn't have GUI yet
 ## Getting started
 These instructions will help you set up and run the email client on your local machine.
 ## Prerequisites
@@ -22,9 +22,9 @@ This will start a local mail server that listens on port 2225 for SMTP and port 
 
 3. Open the configuration.py file and change the SMTP_SERVER and POP3_SERVER variables to “localhost”. Also, change the SMTP_PORT and POP3_PORT variables to 2225 and 3335, respectively.
 
-4. Open the console_menu.py file and run the Python script using the command:
+4. Open the main.py file and run the Python script using the command:
 ```
-python console_menu.py
+python main.py
 ```
 ## Usage
 Once you have logged in, you will see a menu with the following options:
