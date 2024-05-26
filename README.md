@@ -35,8 +35,6 @@ Once you have logged in, you will see a menu with the following options:
 
 * Quit: This option allows you to exit the email client and close the connection with the mail server.
 
-## License
-This project is licensed under the HIHI License - see the LICENSE.md file for more details.
 ## Acknowledgments
 * This project uses the socket and mime modules from the Python standard library to implement the SMTP and POP3 protocols.
 * This project uses the test-mail-server project by Eugenehr as a local mail server for testing purposes.
