@@ -10,7 +10,7 @@ import shutil
 import threading
 import getpass
 
-#Sending email with SMTP
+# Sending email with SMTP
 class ConsoleMailClient:
     def __init__(self):
         with open('config.json', encoding='utf-8') as f:
@@ -74,7 +74,7 @@ class ConsoleMailClient:
             addr_cc=cc,
             addr_bcc=bcc,
             content_subject=subject,
-            content_main="",  # Initialize content_main as an empty string
+            content_main="",
             content_dir_attachment=[]
         )
 
@@ -307,7 +307,6 @@ class ConsoleMailClient:
 
             input("- Nhấn [Enter] để tiếp tục -")
 
-    #Receiving email with POP3
 
 if __name__ == "__main__":
     console_mail_client = ConsoleMailClient()

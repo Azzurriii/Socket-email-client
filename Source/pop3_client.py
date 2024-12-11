@@ -48,7 +48,6 @@ class POP3_Client:
 
     def cmd_STAT(self):
         self.client_socket.send("STAT\r\n".encode())
-        # Lấy số mail nhận được của mail này
         self.message_count = int(re.compile(r'\s(\S+)\s').findall(self.client_socket.recv(1024).decode())[0])
 
     def cmd_LIST(self):
@@ -145,21 +144,3 @@ class POP3_Client:
             print(self.mail_subject[i])
             print(self.mail_content[i].encode())
             print(self.attach_file_dir[i])
-
-
-# client_mail = POP3_Client(
-#     email="nqthinh@hcmus.com",
-#     server_name="127.0.0.1",
-#     server_port=3335
-# )
-
-# client_mail.connectingServer()
-# print(client_mail.cmd_USER())
-# # print(client_mail.cmd_PASS())
-# client_mail.cmd_STAT()
-# print(client_mail.cmd_LIST())
-# client_mail.cmd_receive_mail()
-# client_mail.cmd_receive_mail_information()
-# print(client_mail.attach_file_dir)
-# # client_mail.cmd_DELE()
-# client_mail.cmd_QUIT()
